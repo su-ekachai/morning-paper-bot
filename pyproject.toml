@@ -1,0 +1,27 @@
+[project]
+name = "morning-paper-bot"
+version = "1.0.0"
+description = "Daily news digest bot: RSS -> LLM top-10 -> Discord/Telegram"
+requires-python = ">=3.13"
+dependencies = [
+    "feedparser>=6.0",
+    "requests>=2.31",
+    "anthropic>=0.117.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.15.22",
+    "ty>=0.0.60",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["test_digest.py"]

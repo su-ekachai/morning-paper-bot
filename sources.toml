@@ -1,0 +1,44 @@
+# Sources for the morning digest. Add/remove/edit [[source]] blocks freely.
+# Fields (all required): name, url (RSS/Atom feed), topic, lang ("th" summaries in Thai, "en" in English)
+
+[[source]]
+name = "Hacker News"
+url = "https://hnrss.org/frontpage"
+topic = "tech"
+lang = "en"
+
+[[source]]
+name = "The Verge"
+url = "https://www.theverge.com/rss/index.xml"
+topic = "tech"
+lang = "en"
+
+[[source]]
+name = "TechCrunch"
+url = "https://techcrunch.com/feed/"
+topic = "tech"
+lang = "en"
+
+[[source]]
+name = "Blognone"
+url = "https://www.blognone.com/atom.xml"
+topic = "tech"
+lang = "th"
+
+[[source]]
+name = "The Standard"
+url = "https://thestandard.co/feed/"
+topic = "thai"
+lang = "th"
+
+[[source]]
+name = "Investing.com"
+url = "https://www.investing.com/rss/news.rss"
+topic = "finance"
+lang = "en"
+
+[[source]]
+name = "CoinDesk"
+url = "https://www.coindesk.com/arc/outboundfeeds/rss/"
+topic = "crypto"
+lang = "en"

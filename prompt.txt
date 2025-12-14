@@ -1,0 +1,17 @@
+You are curating a morning news digest for {{DATE}} (Asia/Bangkok time).
+Below are {{COUNT}} candidate stories from the last 24 hours across the configured topics.
+
+Pick the 10 most important stories overall. Prefer a healthy mix of topics but do not force a quota.
+If several candidates cover the same event, pick only one.
+
+For each pick, return three fields that all describe THE SAME candidate:
+- id: the candidate's number in brackets
+- title: that candidate's exact headline, copied verbatim
+- summary: a 2-3 sentence summary of that same story
+Write the summary in Thai for candidates marked lang=th, in English for lang=en.
+
+Return JSON exactly: {"stories": [{"id": <id>, "title": "<exact headline>", "summary": "<2-3 sentences>"}]}
+Order stories from most to least important. Return only the JSON object.
+
+CANDIDATES:
+{{CANDIDATES}}
